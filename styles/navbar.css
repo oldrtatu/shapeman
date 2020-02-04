@@ -1,0 +1,27 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.desktop_nav {
+    font-family: "Source Sans Pro";
+    display: inline-flex;
+    line-height: 60px;
+    align-items: center;
+    border: 1px solid green;
+    width:100%;
+}
+#logo_name {
+    font-size: 22px;
+    padding-left:10px;
+}
+.nav_list{
+    list-style-type:none;
+    display:inline-flex;
+    margin-right:0;
+    margin-left:auto;
+}
+.nav_options{
+    font-size:16px;
+    font-weight: 400;
+    padding:0px 10px;
+}
