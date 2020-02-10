@@ -1,4 +1,10 @@
 import NavBar from '../components/navbar';
-const App = () => <NavBar />;
+import HomePage from '../components/home';
+const App = () => (
+	<React.Fragment>
+		<NavBar />
+		<HomePage />
+	</React.Fragment>
+);
 
 export default App;

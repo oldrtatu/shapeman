@@ -1,0 +1,96 @@
+
+/* --------- Landing page ------------- */
+.landing_page {
+	width: 100vw;
+	height: 92vh;
+	background-image: url('../images/home.png');
+	background-position: center;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+.landing_content_wrapper {
+	margin-top: 150px;
+	margin-left: 100px;
+	width: 450px;
+}
+.first_dot {
+	height: 50px;
+	width: 50px;
+}
+.main_line {
+	font-family: "Source Sans Pro";
+	font-weight: 500;
+	font-size: 2.5rem;
+	margin-top: -30px;
+	margin-left: 40px;
+}
+.second_dot {
+	height: 50px;
+	width: 50px;
+	margin-top: -30px;
+	margin-left: 280px;
+}
+.get_button {
+	background-color: #000;
+	color: #fff;
+	padding: 10px 0px;
+	width: 160px;
+	font-family: "Source Sans Pro";
+	text-align: center;
+	margin-left: 40px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+/* --------- Our work ------------- */
+.our_work{
+    margin-top: 93vh;
+    font-family: "Source Sans Pro";
+}
+.head_line{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #BBC3D5;
+}
+
+/* --------- Media queries  --------*/
+
+@media only screen and (max-width: 650px) {
+	.landing_page {
+		height: 92vh;
+		background-image: url('../images/mobile_home.png');
+		background-repeat: no-repeat;
+	}
+	.landing_content_wrapper {
+		margin-left: 50px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.landing_content_wrapper {
+		margin-left: 0px;
+		width: 360px;
+	}
+	.main_line {
+		font-size: 2rem;
+	}
+}
+::-webkit-scrollbar {
+	width: 2px;
+	height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: grey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

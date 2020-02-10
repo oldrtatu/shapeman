@@ -1,27 +1,138 @@
-body,html{
-    margin: 0;
-    padding: 0;
+body,
+html {
+	margin: 0;
+	padding: 0;
 }
+
+/*-------- Desktop navigation ---------*/
+
 .desktop_nav {
-    font-family: "Source Sans Pro";
-    display: inline-flex;
-    line-height: 60px;
-    align-items: center;
-    border: 1px solid green;
-    width:100%;
+	font-family: "Source Sans Pro";
+	display: inline-flex;
+	height: 60px;
+	align-items: center;
+	width: 100%;
 }
 #logo_name {
-    font-size: 22px;
-    padding-left:10px;
+	font-size: 22px;
+	padding-left: 25px;
+	cursor: pointer;
+	font-weight: 400;
 }
-.nav_list{
-    list-style-type:none;
-    display:inline-flex;
-    margin-right:0;
-    margin-left:auto;
+.nav_list {
+	list-style-type: none;
+	display: inline-flex;
+	margin-right: 0;
+	margin-left: auto;
 }
-.nav_options{
-    font-size:16px;
-    font-weight: 400;
-    padding:0px 10px;
+.nav_options {
+	font-size: 14px;
+	font-weight: 350;
+	padding: 0px 25px;
+	line-height: 60px;
+	cursor: pointer;
+}
+.nav_options_last {
+	background-color: #000;
+	color: #fff;
+	height: 60px;
+	line-height: 60px;
+	padding: 0px 70px;
+	cursor: pointer;
+	font-size: 15px;
+	margin-left: 25px;
+}
+
+/*--------- Mobile navigation -----------*/
+.mobile_nav {
+	display: none;
+	font-family: "Source Sans Pro";
+}
+
+.burger_container {
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+}
+.icon_image {
+	width: 28px;
+	height: 22px;
+	padding-top: 19px;
+	padding-left: 15px;
+}
+#mobile_logo_name {
+	font-size: 22px;
+	padding-left: 15px;
+	cursor: pointer;
+	font-weight: 400;
+}
+.menu {
+	background: #000;
+	height: 100vh;
+	width: 100vw;
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	transition: all 0.25s ease;
+	transform: translateX(-50%);
+	top: 0;
+	display: grid;
+	grid-template-rows: 0px 1fr;
+}
+.active {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.25s ease;
+	transform: translateX(0);
+}
+.side_menu_header{
+	display: flex;
+}
+.close_container{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	right: 0;
+}
+#mobile_logo{
+	font-size: 22px;
+	cursor: pointer;
+	font-weight: 400;
+	color: #fff;
+	font-family: "Source Sans Pro";
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+}
+.close_image {
+	width: 20px;
+	height: 20px;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+.side_menu_list{
+	list-style-type: none;
+	font-family: "Source Sans Pro";
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+.side_menu_options{
+	color: #fff;
+	font-weight: 400;
+	font-size: 20px;
+	padding: 20px 0px;
+}
+/* ------------- Media queries ------------*/
+@media only screen and (max-width: 650px) {
+	.desktop_nav {
+		display: none;
+	}
+	.mobile_nav {
+		font-family: "Source Sans Pro";
+		display: inline-flex;
+		height: 60px;
+		align-items: center;
+		width: 100%;
+	}
 }
