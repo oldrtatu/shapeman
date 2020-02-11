@@ -39,6 +39,7 @@
 	margin-left: 40px;
 	margin-top: 20px;
 	font-size: 14px;
+	cursor: pointer;
 }
 
 /* --------- Our work ------------- */
@@ -179,17 +180,19 @@
     width: 50px;
     height: 50px;
     background-color: rgba(187, 195, 213, 0.53);
+	cursor: pointer;
 }
 .left_arrow > img{
     padding: 17px;
     width: 15px;
-    height: 15px;
+	height: 15px;
 }
 .right_arrow{
     width: 50px;
     height: 50px;
     background-color: #000;
     margin-left: 50px;
+	cursor: pointer;
 }
 .right_arrow > img{
     padding: 17px;
@@ -262,7 +265,7 @@
         width: 95%;
     }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 850px) {
 	.screenshot1 {
 		margin: 25px 10% 0px;
 		min-width: 150px;
@@ -272,7 +275,7 @@
 		display: inline-block;
 	}
 	.services_container {
-		width: 600px;
+		width: 700px;
 		margin: auto;
 		margin-bottom: 50px;
 	}
