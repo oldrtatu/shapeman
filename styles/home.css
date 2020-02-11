@@ -1,7 +1,6 @@
-
 /* --------- Landing page ------------- */
 .landing_page {
-	width: 100vw;
+	width: 99vw;
 	height: 92vh;
 	background-image: url('../images/home.png');
 	background-position: center;
@@ -10,7 +9,7 @@
 }
 .landing_content_wrapper {
 	margin-top: 150px;
-	margin-left: 100px;
+	margin-left: 10%;
 	width: 450px;
 }
 .first_dot {
@@ -43,18 +42,249 @@
 }
 
 /* --------- Our work ------------- */
-.our_work{
-    margin-top: 93vh;
+.our_work {
+	margin-top: 93vh;
+	font-family: "Source Sans Pro";
+}
+.head_line {
+	width: 100%;
+	font-size: 18px;
+	text-align: center;
+	color: #bbc3d5;
+	padding-top: 20px;
+}
+.first_card {
+	width: 80%;
+	height: 500px;
+	margin: 80px auto 0px;
+	display: grid;
+	grid-template-rows: 80px 1fr;
+	grid-template-columns: 80px 1fr 300px;
+	grid-template-areas: "card_number . ." ". screenshot title";
+	margin-bottom: 100px;
+}
+.card_number {
+	background-color: #000;
+	padding: 25px 0px;
+	font-size: 22px;
+	color: #fff;
+	grid-area: card_number;
+	text-align: center;
+}
+.screenshot_container {
+	grid-area: screenshot;
+	background-color: rgba(187, 195, 213, 0.3);
+	height: 100%;
+}
+.screenshot {
+	margin: 5% 10%;
+	min-width: 80%;
+	min-height: 80%;
+	max-height: 80%;
+	max-width: 80%;
+}
+.screenshot1 {
+	margin: 20px 10% 0px;
+	min-width: 200px;
+	min-height: 380px;
+	max-height: 380px;
+	max-width: 200px;
+	display: inline-block;
+}
+.project_container {
+	grid-area: title;
+	text-align: right;
+	margin-top: 180px;
+}
+.project_tech {
+	color: #bbc3d5;
+	font-size: 1rem;
+	font-weight: 400;
+}
+.project_name {
+	padding-top: 10px;
+	font-size: 2.4rem;
+}
+.second_card {
+	width: 80%;
+	height: 500px;
+	margin: 80px auto 0px;
+	display: grid;
+	grid-template-rows: 80px 1fr;
+	grid-template-columns: 300px 1fr 80px;
+	grid-template-areas: ". . card_number" "title screenshot .";
+	margin-bottom: 100px;
+}
+.project_container_1 {
+	grid-area: title;
+	text-align: left;
+	margin-top: 180px;
+}
+.view_more {
+	border: 1px solid #000;
+	width: 150px;
+	text-align: center;
+	padding: 10px 0px;
+	margin: auto;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+/*------------ Services -----------------*/
+.services {
+	margin-left: 10%;
+	width: 80%;
+	font-family: "Source Sans Pro";
+}
+.services_heading {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+.services_line {
+	font-size: 18px;
+	padding: 10px 0px;
+	color: #adb6cc;
+}
+.services_container {
+	width: 100%;
+	margin-bottom: 100px;
+	align-items: center;
+}
+.avatars {
+	padding: 10px;
+	width: 250px;
+	height: 250px;
+	display: inline-flex;
+}
+
+/*-------------- Our clients --------------- */
+.clients{
+    margin: 50px auto;
+    width: 80%;
+    display: grid;
+    grid-template-rows: 80px 100px 70px;
+    grid-template-columns: 130px 1fr;
+    grid-template-areas: "arrows heading" "arrows slider" ". slider";
     font-family: "Source Sans Pro";
 }
-.head_line{
-    width: 100%;
-    font-size: 18px;
-    text-align: center;
-    color: #BBC3D5;
+.clients_heading{
+    grid-area: heading;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.arrows{
+    grid-area: arrows;
+    margin-top: 10px;
+}
+.left_arrow{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(187, 195, 213, 0.53);
+}
+.left_arrow > img{
+    padding: 17px;
+    width: 15px;
+    height: 15px;
+}
+.right_arrow{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    margin-left: 50px;
+}
+.right_arrow > img{
+    padding: 17px;
+    width: 15px;
+    height: 15px;
+}
+.slider{
+    grid-area: slider;
+    width: 80%;
+}
+.testimonial_title{
+    color: #ADB6CC;
+    padding-top: 20px;
 }
 
 /* --------- Media queries  --------*/
+
+@media only screen and (max-width: 1200px) {
+	.first_card {
+		width: 95%;
+		grid-template-rows: 80px 1fr;
+		grid-template-columns: 80px 1fr;
+		grid-template-areas: "card_number title" "screenshot screenshot";
+		height: 430px;
+	}
+	.second_card {
+		width: 95%;
+		grid-template-rows: 80px 1fr;
+		grid-template-columns: 80px 1fr;
+		grid-template-areas: "card_number title" "screenshot screenshot";
+		height: 430px;
+	}
+	.project_container_1 {
+		text-align: left;
+		margin-top: 0px;
+		margin-left: 20px;
+	}
+	.project_container {
+		text-align: left;
+		margin-top: 0px;
+		margin-left: 20px;
+	}
+	.project_tech {
+		font-size: 14px;
+		padding-top: 15px;
+	}
+	.project_name {
+		padding-top: 5px;
+		font-size: 1.4rem;
+	}
+	.screenshot_container {
+		margin-top: 10px;
+	}
+	.screenshot {
+		margin: 2% 5%;
+		min-width: 90%;
+		min-height: 90%;
+		max-height: 90%;
+		max-width: 90%;
+	}
+	.services_container {
+		width: 1000px;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	.avatars {
+		padding: 10px 20px;
+    }
+    .slider{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+	.screenshot1 {
+		margin: 25px 10% 0px;
+		min-width: 150px;
+		min-height: 300px;
+		max-height: 300px;
+		max-width: 150px;
+		display: inline-block;
+	}
+	.services_container {
+		width: 600px;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	.avatars {
+		padding: 10px 20px;
+    }
+    
+    .clients{
+        width: 95%;
+        margin: 50px auto;
+    }
+}
 
 @media only screen and (max-width: 650px) {
 	.landing_page {
@@ -65,14 +295,88 @@
 	.landing_content_wrapper {
 		margin-left: 50px;
 	}
+	.second_dot {
+		margin-left: 230px;
+	}
+	.services_heading {
+		font-size: 2rem;
+	}
+	.services_line {
+		font-size: 16px;
+	}
+	.services {
+		width: 90%;
+		margin: auto;
+	}
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 540px) {
 	.landing_content_wrapper {
 		margin-left: 0px;
 		width: 360px;
+    }
+    .screenshot1 {
+		margin: 25px 7% 0px;
+		min-width: 150px;
+		min-height: 300px;
+		max-height: 300px;
+		max-width: 150px;
+		display: inline-block;
 	}
 	.main_line {
 		font-size: 2rem;
+	}
+	.screenshot {
+		margin: 4% 5%;
+	}
+	.services_container {
+		width: 300px;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	.avatars {
+		padding: 10px 20px;
+	}
+}
+@media only screen and (max-width: 450px) {
+    .screenshot1 {
+		margin: 25px 3% 0px;
+		min-width: 150px;
+		min-height: 300px;
+		max-height: 300px;
+		max-width: 150px;
+		display: inline-block;
+    }
+    .clients{
+        margin: 50px auto;
+        width: 90%;
+        display: grid;
+        grid-template-rows: 70px 1fr;
+        grid-template-columns: 130px 1fr;
+        grid-template-areas: "heading arrows" "slider slider";
+        font-family: "Source Sans Pro";
+    }
+    .slider{
+        width: 100%;
+    }
+    .arrows{
+        margin-top: 0px;
+    }
+    .left_arrow{
+        display: inline-block;
+    }
+    .right_arrow{
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .screenshot1 {
+		margin: 25px 1% 0px;
+		min-width: 130px;
+		min-height: 300px;
+		max-height: 300px;
+		max-width: 130px;
+		display: inline-block;
 	}
 }
 ::-webkit-scrollbar {

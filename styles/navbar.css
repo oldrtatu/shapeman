@@ -78,6 +78,7 @@ html {
 	top: 0;
 	display: grid;
 	grid-template-rows: 0px 1fr;
+	z-index: 100;
 }
 .active {
 	opacity: 1;
