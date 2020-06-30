@@ -8,7 +8,7 @@ class HomePage extends React.Component {
     return (
       <div className='mainContainer'>
         <img src={require("../images/con.svg")} className='image'></img>
-        <div className='con'>Under construction</div>
+        <div className='con'>Under maintenance</div>
       </div>
       );
   }
