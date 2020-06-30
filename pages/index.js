@@ -3,9 +3,9 @@ import HomePage from '../components/home';
 import Footer from '../components/footer'
 const App = () => (
 	<React.Fragment>
-		<NavBar />
+		{/* <NavBar /> */}
 		<HomePage />
-		<Footer/>
+		{/* <Footer/> */}
 	</React.Fragment>
 );
 
